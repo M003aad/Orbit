@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="760" viewBox="0 0 960 760" role="img" aria-labelledby="title description">
+  <title id="title">Orbit Options page preview</title>
+  <desc id="description">A visual preview of Orbit settings for language, menu position, eight actions, and enabled sites.</desc>
+  <defs>
+    <linearGradient id="background" x2="0" y2="1">
+      <stop stop-color="#0a1022"/>
+      <stop offset="1" stop-color="#0e1831"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="760" rx="20" fill="url(#background)"/>
+  <text x="100" y="75" fill="#dff1ff" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700">Orbit</text>
+  <text x="100" y="105" fill="#8fa8c8" font-family="Segoe UI,Arial,sans-serif" font-size="14">Changes save automatically and apply to every open tab.</text>
+  <g fill="#101a36" stroke="#315078" stroke-opacity=".6">
+    <rect x="100" y="135" width="760" height="93" rx="14"/>
+    <rect x="100" y="246" width="760" height="116" rx="14"/>
+    <rect x="100" y="380" width="760" height="206" rx="14"/>
+    <rect x="100" y="604" width="760" height="112" rx="14"/>
+  </g>
+  <g fill="#dff1ff" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600">
+    <text x="124" y="168">Language</text>
+    <text x="124" y="280">Menu position</text>
+    <text x="124" y="414">Menu actions (8 slots)</text>
+    <text x="124" y="638">Enabled sites</text>
+  </g>
+  <rect x="124" y="181" width="282" height="31" rx="7" fill="#0c1530" stroke="#315078"/>
+  <text x="138" y="202" fill="#dff1ff" font-family="Segoe UI,Arial,sans-serif" font-size="13">Automatic (browser language)  ▾</text>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="13">
+    <rect x="124" y="296" width="88" height="38" rx="8" fill="#0c1530" stroke="#35e0ff"/>
+    <rect x="222" y="296" width="88" height="38" rx="8" fill="#0c1530" stroke="#315078"/>
+    <rect x="124" y="340" width="88" height="1" fill="#315078"/>
+    <rect x="222" y="340" width="88" height="1" fill="#315078"/>
+    <text x="143" y="320" fill="#dff1ff">Top left</text>
+    <text x="241" y="320" fill="#dff1ff">Top right</text>
+    <rect x="320" y="296" width="88" height="38" rx="8" fill="#0c1530" stroke="#315078"/>
+    <rect x="418" y="296" width="100" height="38" rx="8" fill="#0c1530" stroke="#315078"/>
+    <text x="341" y="320" fill="#dff1ff">Bottom left</text>
+    <text x="439" y="320" fill="#dff1ff">Bottom right</text>
+  </g>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#dff1ff">
+    <g fill="#8fa8c8" text-anchor="end">
+      <text x="145" y="455">1</text><text x="145" y="482">2</text>
+      <text x="145" y="509">3</text><text x="145" y="536">4</text>
+      <text x="445" y="455">5</text><text x="445" y="482">6</text>
+      <text x="445" y="509">7</text><text x="445" y="536">8</text>
+    </g>
+    <g fill="#0c1530" stroke="#315078">
+      <rect x="158" y="436" width="250" height="25" rx="6"/>
+      <rect x="158" y="463" width="250" height="25" rx="6"/>
+      <rect x="158" y="490" width="250" height="25" rx="6"/>
+      <rect x="158" y="517" width="250" height="25" rx="6"/>
+      <rect x="458" y="436" width="250" height="25" rx="6"/>
+      <rect x="458" y="463" width="250" height="25" rx="6"/>
+      <rect x="458" y="490" width="250" height="25" rx="6"/>
+      <rect x="458" y="517" width="250" height="25" rx="6"/>
+    </g>
+    <text x="171" y="453">New window</text><text x="171" y="480">New tab</text>
+    <text x="171" y="507">Private window</text><text x="171" y="534">History</text>
+    <text x="471" y="453">Extensions</text><text x="471" y="480">Passwords</text>
+    <text x="471" y="507">Settings</text><text x="471" y="534">Downloads</text>
+  </g>
+  <g fill="#dff1ff" font-family="Segoe UI,Arial,sans-serif" font-size="14">
+    <text x="124" y="678">example.com</text>
+    <text x="124" y="702">docs.example.org</text>
+  </g>
+  <g fill="#35e0ff" font-family="Segoe UI,Arial,sans-serif" font-size="12">
+    <text x="809" y="678">Remove</text>
+    <text x="809" y="702">Remove</text>
+  </g>
+</svg>

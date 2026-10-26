@@ -1,0 +1,45 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate extension
+        run: npm run build
+
+      - name: Verify tag version
+        run: |
+          TAG="$(git describe --tags --exact-match HEAD)"
+          node -e 'const fs = require("node:fs"); const manifest = JSON.parse(fs.readFileSync("manifest.json", "utf8")); if (process.argv[1] !== "v" + manifest.version) throw new Error("Release tag must match manifest version: v" + manifest.version);' "$TAG"
+
+      - name: Package extension
+        run: |
+          TAG="$(git describe --tags --exact-match HEAD)"
+          zip -r "Orbit-${TAG}.zip" manifest.json background.js content.js logo.js options.html options.js shared.js icons LICENSE
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          files: Orbit-${{ github.ref_name }}.zip
+          generate_release_notes: true
